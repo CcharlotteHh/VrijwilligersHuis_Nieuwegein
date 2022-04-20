@@ -8,40 +8,79 @@
 
 html, body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.container {
-  display: flex;
-  height: 100%;
-  width: 100%;
+.container{
+  height:100%;
+  width:100%;
+  display:flex;
+  justify-content: center;
 }
 
-section {
-  width: 50%;
-  height: 100%;
-  background-color: pink;
-  display: grid;
-  grid-template-rows: 1fr 3fr 1fr;
-  grid-template-areas: "header" "info" "contact";
+.home_container{
+  height:100%;
+  width:50%;
+  display:flex;
+  flex-direction: column;
+  background-color: rebeccapurple;
+  justify-content: center;
+}
+ 
+.form-container{
+  height:100%;
+  width:50%;
 }
 
-.form-container {
-  width: 50%;
-  height: 100%;
-  background-color: lightcoral;
+header{
+  width:100%;
+  height:10%;
 }
 
-.header-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+header{
+  display:flex;
+  margin: 10%;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-weight:bold;
 }
 
-.info-container {
-  display: flex;
-  width: 100%;
-  height: 40%;
+.logo_container{
+  height:100%;
+  width:50%;
+}
+.logo_container img{
+ height:100%;
+ width:100%;
+ object-fit:cover;
+}
+.logo-name{
+  height:100%;
+  width:60%;
+}
+
+.info-container{
+  width:100%;
+  height:90%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin: 1%;
+  padding:1%;
+}
+
+.info-container h2{
+  color: white;
+  font-weight:bold;
+}
+
+
+
+.contact-container{
+  width:100%;
+  height:10%;
 }
