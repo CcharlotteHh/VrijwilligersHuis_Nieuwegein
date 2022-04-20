@@ -1,9 +1,9 @@
 <?php
 
-$servername = "localhost";
-$username = "u210578_Admin1";
-$password = "Admin1";
-$db = "u210578_vhndb"; //naam van de database
+$servername = "10.52.1.65:8889";
+$username = "root";
+$password = "root";
+$db = "vrijwilligershuis_nieuwegein"; //naam van de database
 
 $conn = new mysqli($servername, $username, $password, $db);
 
