@@ -22,9 +22,30 @@
       </div>
     </section>
     <div class="form-container flex">
-      <form>
-        form
-      </form>
+    <form action="process.php" method="post">
+
+    <input type="text" placeholder="Voornaam">
+    <input type="text" placeholder="*tussenvoegsel">
+    <input type="text" placeholder="Achternaam">
+
+    <input type="text" placeholder="email">
+    <input type="text" placeholder="tel*">
+
+    <select name="pets" id="pet-select">
+    <option value="">--Please choose an option--</option>
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+    <option value="parrot">Parrot</option>
+    <option value="spider">Spider</option>
+    <option value="goldfish">Goldfish</option>
+</select>
+
+       
+        
+        <input type="submit" class="form-control btn btn-primary"name="submit">
+        
+    </form>
     </div>
   </div>
 </body>
