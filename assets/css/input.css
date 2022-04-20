@@ -6,3 +6,42 @@
 
 /* custom css */
 
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  width: 50%;
+  height: 100%;
+  background-color: pink;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas: "header" "info" "contact";
+}
+
+.form-container {
+  width: 50%;
+  height: 100%;
+  background-color: lightcoral;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.info-container {
+  display: flex;
+  width: 100%;
+  height: 40%;
+}
