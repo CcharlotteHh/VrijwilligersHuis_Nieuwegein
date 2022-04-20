@@ -1,6 +1,6 @@
 <?php
 
-$servername = "10.52.1.65:8889";
+$servername = "localhost";
 $username = "root";
 $password = "root";
 $db = "vrijwilligershuis_nieuwegein"; //naam van de database
