@@ -1,3 +1,27 @@
+<?php include ('../functions/connect.php');
+    if(isset($_POST['submit'])){
+
+        $voornaam = $_POST['voornaam'];
+        $tussenvoegsel = $_POST['tussenvoegsel'];
+        $achternaam = $_POST['achternaam'];
+        $email = $_POST['email'];
+        $tel = $_POST['tel_nummer'];
+        $category = $_POST['category-product'];
+
+        $sql = "INSERT INTO `product_meldingen`(`voornaam`, `tussenvoegsel`, `achternaam`, `email`, `tel`, `category`) VALUES ('$voornaam','$tussenvoegsel','$achternaam','$email','$tel', $category);";
+
+    if ($conn->query($sql) === TRUE){
+        echo "Product has been added"; //message als het is toegevoegd
+    } else{
+        echo "Database Query error"; //verbinding mislukt
+    }
+
+    $conn->close();
+
+} else { 
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,16 +46,16 @@
       </div>
     </section>
     <div class="form-container flex">
-    <form action="process.php" method="post">
+    <form action="" method="post">
 
-    <input type="text" placeholder="Voornaam">
-    <input type="text" placeholder="*tussenvoegsel">
-    <input type="text" placeholder="Achternaam">
+    <input type="text" name="voornaam" placeholder="Voornaam">
+    <input type="text" name="tussenvoegsel" placeholder="*tussenvoegsel">
+    <input type="text" name="achternaam" placeholder="Achternaam">
 
-    <input type="text" placeholder="email">
-    <input type="text" placeholder="tel*">
+    <input type="text" name="email" placeholder="email">
+    <input type="text" name="tel_nummer" placeholder="tel*">
 
-    <select name="pets" id="pet-select">
+    <select name="category-product" id="pet-select">
     <option value="">--Please choose an option--</option>
     <option value="dog">Dog</option>
     <option value="cat">Cat</option>
@@ -43,11 +67,13 @@
 
        
         
-        <input type="submit" class="form-control btn btn-primary"name="submit">
+        <input type="submit" class="form-control btn btn-primary" name="submit">
         
     </form>
     </div>
   </div>
 </body>
-
 </html>
+<?php
+}
+?>
