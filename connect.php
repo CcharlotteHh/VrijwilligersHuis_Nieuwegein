@@ -1,9 +1,9 @@
 <?php
 
 $servername = "localhost";
-$username = "root";
-$password = "";
-$db = "webshop"; //naam van de database
+$username = "u210578_Admin1";
+$password = "Admin1";
+$db = "u210578_vhndb"; //naam van de database
 
 $conn = new mysqli($servername, $username, $password, $db);
 

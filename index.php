@@ -1,4 +1,4 @@
-<?php include ('../functions/connect.php');
+<?php include 'connect.php';
     if(isset($_POST['submit'])){
 
         $voornaam = $_POST['voornaam'];
