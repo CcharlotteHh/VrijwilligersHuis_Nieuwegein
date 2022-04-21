@@ -18,7 +18,7 @@
       </section>
     </div>
     <div class="right">
-      <form action="">
+      <form action="process.php" method="POST">
         <section class="copy">
           <h2>Formulier</h2>
 
