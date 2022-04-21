@@ -32,7 +32,7 @@ include 'process.php';
         </div>
         <div class="input-container phone">
           <label for="tel">Telefoonnummer</label>
-          <input name="tel_nummer" type="text" placeholder="Telefoonnummer">
+          <input name="tel_nummer" type="tel" placeholder="Telefoonnummer">
         </div>
         <div class="input-container">
           <label for="message">Vertel ons wat over hoe je wil helpen</label>
