@@ -40,7 +40,7 @@ include 'process.php';
         </div>
         <div class="input-container">
           <label for="category">Selecteer category</label>
-          <select name="category-product" required>
+          <select name="category_product" required>
             <?php
             $sql = "select category_id, naam from categorie";
             $result = mysqli_query($conn, $sql);
@@ -48,8 +48,6 @@ include 'process.php';
             while ($row = mysqli_fetch_assoc($result)) {
             ?>
               <option value="<?php echo $row['category_id'] ?>"><?php echo $row['naam'] ?></option>
-
-
             <?php
             } ?>
           </select>
