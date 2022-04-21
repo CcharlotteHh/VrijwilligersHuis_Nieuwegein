@@ -21,14 +21,14 @@ include 'process.php';
         <div class="input-container name">
           <label for="fname">Volledige naam</label>
           <div class="name-input-container">
-            <input class="name-input" name="voornaam" type="text" placeholder="Voornaam" required>
+            <input class="name-input" name="voornaam" type="text" placeholder="Voornaam*" required>
             <input class="tv-input" name="tussenvoegsel" type="text" placeholder="tvs">
-            <input class="name-input" name="achternaam" type="text" placeholder="Achterrnaam" required>
+            <input class="name-input" name="achternaam" type="text" placeholder="Achternaam*" required>
           </div>
         </div>
         <div class="input-container email">
           <label for="email">E-mail</label>
-          <input name="email" type="text" placeholder="E-mail" required>
+          <input name="email" type="text" placeholder="E-mail*" required>
         </div>
         <div class="input-container phone">
           <label for="tel">Telefoonnummer</label>
@@ -42,12 +42,12 @@ include 'process.php';
           <label for="category">Selecteer category</label>
           <select name="category-product" required>
             <?php
-            $sql = "select category_id, name from category";
+            $sql = "select category_id, naam from categorie";
             $result = mysqli_query($conn, $sql);
 
             while ($row = mysqli_fetch_assoc($result)) {
             ?>
-              <option value="<?php echo $row['category_id'] ?>"><?php echo $row['name'] ?></option>
+              <option value="<?php echo $row['category_id'] ?>"><?php echo $row['naam'] ?></option>
 
 
             <?php
