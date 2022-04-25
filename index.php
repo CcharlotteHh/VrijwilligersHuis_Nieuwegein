@@ -21,18 +21,18 @@ include 'process.php';
         <div class="input-container name">
           <label for="fname">Volledige naam</label>
           <div class="name-input-container">
-            <input class="name-input" name="voornaam" type="text" placeholder="Voornaam*" required>
+            <input id="voornaam" class="name-input" name="voornaam" type="text" placeholder="Voornaam*" required>
             <input class="tv-input" name="tussenvoegsel" type="text" placeholder="tvs">
-            <input class="name-input" name="achternaam" type="text" placeholder="Achternaam*" required>
+            <input id="achternaam" class="name-input" name="achternaam" type="text" placeholder="Achternaam*" required>
           </div>
         </div>
         <div class="input-container email">
           <label for="email">E-mail</label>
-          <input name="email" type="text" placeholder="E-mail*" required>
+          <input id="email" name="email" type="email" placeholder="E-mail*" required>
         </div>
         <div class="input-container phone">
           <label for="tel">Telefoonnummer</label>
-          <input name="tel_nummer" type="tel" placeholder="Telefoonnummer">
+          <input name="tel_nummer" type="text" placeholder="Telefoonnummer">
         </div>
         <div class="input-container">
           <label for="message">Vertel ons wat over hoe je wil helpen</label>
@@ -52,7 +52,7 @@ include 'process.php';
             } ?>
           </select>
         </div>
-        <button type="submit" class="signup-btn" name="submit">Verstuur</button>
+        <button type="submit" class="signup-btn" name="submit" id="submit">Verstuur</button>
 
       </form>
     </div>
@@ -60,7 +60,6 @@ include 'process.php';
   </div>
   </div>
 </body>
-
 </html>
 <?php
 
