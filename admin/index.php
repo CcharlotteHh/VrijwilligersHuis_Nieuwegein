@@ -11,10 +11,15 @@ include '../connect.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin/filter</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/admin.css">
 </head>
 
 <body>
     <div class="container">
+    <header class="py-3">
+      <img src="../assets/css/logo-bg.svg" alt="logo">
+          <span>VrijwilligersHuis Nieuwegein</span>
+      </header>
         <div class="row  w-75 d-flex justify-content-center">
             <div class="col-12 m-t-4">
                 <form action="index.php" method="post">
@@ -36,7 +41,7 @@ include '../connect.php';
                     <div class="form-group">
                         <label class="col-lg-2 control-label"></label>
                         <div class="col-lg-4">
-                            <input type="submit" name="submit" class="btn btn-primary">
+                            <input type="submit" name="submit" class="btn btn-primary submit-btn">
                         </div>
                     </div>
                 </form>
