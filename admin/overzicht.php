@@ -26,39 +26,39 @@ include '../connect.php';
                             <th>Achternaam</th>
                             <th>Email</th>
                             <th>tel</th>
-                            <th>Bericht</th>
+                            <th>Berichtt</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                        <?php
-                        if (isset($_GET['opt'])) {
-                            $donatie_id = $_GET['opt'];
-                            $sql = "select * from donatie where id = '$donatie_id'";
-                            $result = mysqli_query($conn, $sql) or die('error');
-                            
-                            while ($row = mysqli_fetch_assoc($result)) {
+                            <?php
+                            if (isset($_GET['opt'])) {
+                                $donatie_id = $_GET['opt'];
+                                $sql = "select * from donatie where id = '$donatie_id'";
+                                $result = mysqli_query($conn, $sql) or die('error');
 
-                                $voornaam = $row["voornaam"];
-                                $tussenvoegsel = $row["tussenvoegsel"];
-                                $achternaam = $row["achternaam"];
-                                $email = $row["email"];
-                                $tel = $row["tel"];
-                                $bericht = $row["bericht"];
-                        
-                            }?>
-                           
-                           <td><?php echo $voornaam?></td>
-                           <td><?php echo $tussenvoegsel?></td>
-                           <td><?php echo $achternaam?></td>
-                           <td><?php echo $email?></td>
-                           <td><?php echo $tel?></td>
-                           <td><?php echo $bericht?></td>
-                           <?php
-                                 }
+                                while ($row = mysqli_fetch_assoc($result)) {
 
-                               ?>
-                               </tr>
+                                    $voornaam = $row["voornaam"];
+                                    $tussenvoegsel = $row["tussenvoegsel"];
+                                    $achternaam = $row["achternaam"];
+                                    $email = $row["email"];
+                                    $tel = $row["tel"];
+                                    $bericht = $row["bericht"];
+                                } ?>
+
+                                <td><?php echo $voornaam ?></td>
+                                <td><?php echo $tussenvoegsel ?></td>
+                                <td><?php echo $achternaam ?></td>
+                                <td><?php echo $email ?></td>
+                                <td><?php echo $tel ?></td>
+                                <td><?php echo $bericht ?></td>
+                            <?php
+                            }
+
+                            ?>
+                        </tr>
                     </tbody>
 
                 </table>
