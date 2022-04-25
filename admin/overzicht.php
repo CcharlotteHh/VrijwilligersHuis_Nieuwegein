@@ -25,40 +25,47 @@ include '../connect.php';
                             <th>Tussenvoegsel</th>
                             <th>Achternaam</th>
                             <th>Email</th>
-                            <th>tel</th>
-                            <th>Berichtt</th>
-                            
+                            <th>Tel</th>
+                            <th>Bericht</th>
+                            <th>Categorie</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <?php
-                            if (isset($_GET['opt'])) {
-                                $donatie_id = $_GET['opt'];
-                                $sql = "select * from donatie where id = '$donatie_id'";
-                                $result = mysqli_query($conn, $sql) or die('error');
+                        <?php
+                        if (isset($_GET['opt'])) {
+                            $donatie_id = $_GET['opt'];
+                            $categorie = $_GET['c'];
 
-                                while ($row = mysqli_fetch_assoc($result)) {
+                            
+                            
+                            $sql = "select * from donatie where id = '$donatie_id'";
+                            $result = mysqli_query($conn, $sql) or die('error');
+                            
+                            while ($row = mysqli_fetch_assoc($result)) {
 
-                                    $voornaam = $row["voornaam"];
-                                    $tussenvoegsel = $row["tussenvoegsel"];
-                                    $achternaam = $row["achternaam"];
-                                    $email = $row["email"];
-                                    $tel = $row["tel"];
-                                    $bericht = $row["bericht"];
-                                } ?>
+                                $voornaam = $row["voornaam"];
+                                $tussenvoegsel = $row["tussenvoegsel"];
+                                $achternaam = $row["achternaam"];
+                                $email = $row["email"];
+                                $tel = $row["tel"];
+                                $bericht = $row["bericht"];
 
-                                <td><?php echo $voornaam ?></td>
-                                <td><?php echo $tussenvoegsel ?></td>
-                                <td><?php echo $achternaam ?></td>
-                                <td><?php echo $email ?></td>
-                                <td><?php echo $tel ?></td>
-                                <td><?php echo $bericht ?></td>
-                            <?php
-                            }
+                        
+                            }?>
+                           
+                           <td><?php echo $voornaam?></td>
+                           <td><?php echo $tussenvoegsel?></td>
+                           <td><?php echo $achternaam?></td>
+                           <td><?php echo $email?></td>
+                           <td><?php echo $tel?></td>
+                           <td><?php echo $bericht?></td>
+                           <td><?php echo $categorie?></td>
+                           <?php
+                                 }
 
-                            ?>
-                        </tr>
+                               ?>
+                               </tr>
                     </tbody>
 
                 </table>
