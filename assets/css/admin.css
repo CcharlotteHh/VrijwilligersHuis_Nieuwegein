@@ -35,3 +35,9 @@ header span {
 .col-lg-4 {
   padding: 0;
 }
+
+.btn-danger {
+  background-color: #6E2584;
+  border: none;
+  padding: 10px 20px;
+}
