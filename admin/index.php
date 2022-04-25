@@ -85,7 +85,7 @@ include '../connect.php';
                                             <td><?php echo $achternaam; ?></td>
                                             <td><?php echo $email; ?></td>
                                             <td><?php echo $categorie; ?></td>
-                                            <td><a href="overzicht.php?opt=<?php echo $row['id'] ?>" class="btn btn-danger"><span class="fa fa-trash"></span></a></td>
+                                            <td><a href="overzicht.php?opt=<?php echo $row['id']?>&c=<?php echo $row['categorie.naam']?>" class="btn btn-danger"><span class="fa fa-trash"></span></a></td>
                                         </tr>
                                         
                                       
