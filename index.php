@@ -28,7 +28,7 @@ include 'process.php';
         </div>
         <div class="input-container email">
           <label for="email">E-mail</label>
-          <input id="email" name="email" type="email" placeholder="E-mail*" required>
+          <input id="email" name="email" type="text" placeholder="E-mail*" required>
         </div>
         <div class="input-container phone">
           <label for="tel">Telefoonnummer</label>
