@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "root";
+$password = "";
 $db = "vrijwilligershuis_nieuwegein"; //naam van de database
 
 $conn = new mysqli($servername, $username, $password, $db);
