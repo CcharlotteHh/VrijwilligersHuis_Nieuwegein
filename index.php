@@ -10,6 +10,10 @@ include 'process.php';
       <section class="copy">
         <h1>VrijwilligersHuis Nieuwegein</h1>
         <p>Vul ons formulier in en laat ons weten hoe je ons kunt helpen!</p>
+        <p>Contactgegevens:</p>
+        <p>06 53 97 26 85
+          <br>info@vrijwilligershuis-nieuwegein.nl
+        </p>
       </section>
     </div>
     <div class="right">
@@ -60,6 +64,7 @@ include 'process.php';
   </div>
   </div>
 </body>
+
 </html>
 <?php
 
